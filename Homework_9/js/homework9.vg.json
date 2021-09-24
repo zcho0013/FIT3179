@@ -14,7 +14,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/zcho0013/FIT3179_Homework/Homework_9/data/2019.csv"
+          "url": "https://raw.githubusercontent.com/zcho0013/FIT3179_Homework/main/Homework_9/data/2019.csv"
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
@@ -22,7 +22,8 @@
           "latitude": {"field": "Latitude", "type": "quantitative"},
           "size": {
             "field": "Score",
-            "type": "quantitative"
+            "type": "quantitative",
+            "scale": {"domain": [2, 8]}
           },
           "color": {
             "field": "Score",
