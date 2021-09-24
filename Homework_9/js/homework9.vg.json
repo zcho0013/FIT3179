@@ -14,19 +14,18 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/2_symbol_map/data/earthquake.csv"
+          "url": "https://raw.githubusercontent.com/KaneSec/FIT3179_Homework/Homework_9/data/2019.csv"
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
-          "longitude": {"field": "longitude", "type": "quantitative"},
-          "latitude": {"field": "latitude", "type": "quantitative"},
+          "longitude": {"field": "Longitude", "type": "quantitative"},
+          "latitude": {"field": "Latitude", "type": "quantitative"},
           "size": {
-            "field": "mag",
-            "type": "quantitative",
-            "scale": {"domain": [4, 8]}
+            "field": "Score",
+            "type": "quantitative"
           },
           "color": {
-            "field": "depth",
+            "field": "Score",
             "type": "quantitative",
             "scale": {"scheme": "reds"}
           }
