@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  
+</head>
+<body>
+<h1>Week 10 Homework: Create your own interactive visualisation in Vega-lite</h1>>
+
+<h2>This is the modified proportional symbol map from Homework Week 9</h2>
+<div id="hw10_map"></div>
+
+<h2>This is the interactive visualization map</h2>
+<div id="hw10_interactive"></div>
+
+<script type="text/javascript">
+
+  var specVis1 = "js/proportional_symbolmap.vg.json";
+  var specVis2 = "js/social_lifeexpectancy_scatterplot.vg.json";
+
+  vegaEmbed('#hw10_map', specVis1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  vegaEmbed('#hw10_interactive', specVis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+</body>
+</html>
